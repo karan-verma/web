@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>Q2</title>
+
+</head>
+<body>
+<p>The current date and time is </p>
+<p id="p1"></p>
+<iframe id="frame" src="Q1.html"></iframe><br>
+<img id="img" src="neymar.jpg" style="width:300;height:200"><br>
+<input type="text" id="txt" value="type here"/><br>
+<button onclick="fun()">Change</button>
+
+<script language="javascript">
+function fun(){
+document.getElementById("p1").innerHTML=Date();
+document.getElementById("frame").style.backgroundColor="red";
+document.getElementById("img").src="neymar1.jpg";
+document.getElementById("txt").value=document.getElementById("txt").value.toUpperCase();
+}
+</script>
+
+</body>
+</html>

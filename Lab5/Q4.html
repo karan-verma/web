@@ -1,0 +1,29 @@
+<html>
+<head>
+</head>
+<body>
+
+<form id="f1">
+Account number: <input type="text" name="ac_no"><br><br>
+Balance:<input type="text" name="bal"><br><br>
+Purchase amount: <input type="text" name="bill"><br><br>
+
+<button onclick="myFunction(parseInt(f1.bal.value),parseInt(f1.bill.value))">Purchase</button>
+<p id="demo"></p>
+<script>
+function myFunction(bal,bill)
+{
+/*	ac=document.f1.name.value;
+	bal=document.f1.getElementById("bal");
+	bill=document.f1.getElementById("bill");
+	*/
+	if(bal>=bill)
+	{
+		bal=bal-bill;
+		alert("Have a nice day! Your remaining balance is : "+bal);
+	}
+	else alert("Sorry, balance is low.");
+}
+</script>
+</body>
+</html>

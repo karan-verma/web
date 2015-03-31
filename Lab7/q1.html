@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>Validation and Cookies</title>
+<script language="javascript">
+function validate(){
+
+	if(document.form.name.value == "")
+	{
+	alert("Name can not be empty and cannot be a no");
+	document.form.name.focus();
+	return false;
+	}
+	
+	if(document.form.pincode.value.length!=6)
+	{
+	alert("Pincode can not be empty");
+	document.form.pincode.focus();
+	return false;
+	}
+	if(document.form.select.value=="")
+	{
+	alert("Select a metro");
+	document.form.select.focus();
+	return false;
+	}
+	if(document.form.username.value.length<5 && document.form.username.value.length>12)
+	{
+	alert("Username error");
+	document.form.username.focus();
+	return false;
+	}
+}
+
+</script>
+</head>
+<body>
+
+<form name="form">
+Name <input type="text" name="name"><br>
+Pincode <input type="number" name="pincode"><br>
+Metro<select name="select">
+<option  value="">Select</option>
+<option value="delhi">delhi</option>
+<option value="chennai">chennai</option>
+<option value="bangalore">bangalore</option>
+</select><br>
+Username <input type="text" name="username"><br>
+Password<input type="password" name="password"><br>
+Email <input type="email" name="email"><br>
+Phone <input type="number" name="phone"><br>
+<input type="submit" value="Submit" onclick="validate()">
+
+</form>
+</body>
+</html>

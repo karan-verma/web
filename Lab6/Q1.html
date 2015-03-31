@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>Quiz</title>
+</head>
+<script language="javascript">
+function score(){
+sum=0;
+sum+=parseInt(document.form.age.value);
+sum+=parseInt(document.form.sex.value);
+sum+=parseInt(document.form.ff.value);
+sum+=parseInt(document.form.fs.value);
+sum+=parseInt(document.form.fc.value);
+sum+=parseInt(document.form.ftv.value);
+sum+=parseInt(document.form.fh.value);
+sum+=parseInt(document.form.fm.value);
+sum+=parseInt(document.form.fss.value);
+sum+=parseInt(document.form.fa.value);
+alert(sum);
+}
+
+function fun(){
+return false;
+}
+</script>
+<body>
+<form name="form" onsubmit="return fun();">
+Age:<br><input type="radio" name="age" value="1">20<br>
+<input type="radio" name="age" value="0" >21<br>
+<input type="radio" name="age" value="0">22<br>
+
+Sex:<br><input type="radio" name="sex" value="1">Male<br>
+<input type="radio" name="sex" value="0">Female<br>
+
+Favorite food:<br><input type="radio" name="ff" value="0">Pizza<br>
+<input type="radio" name="ff" value="1">Pasta<br>
+<input type="radio" name="ff" value="0">Burger<br>
+
+Favorite Song:<br><input type="radio" name="fs" value="1">Paradise<br>
+<input type="radio" name="fs" value="0">Yellow<br>
+
+Favorite Color:<br><input type="radio" name="fc" value="0">Yellow<br>
+<input type="radio" name="fc" value="1">Orange<br>
+
+Favorite TV show:<br><input type="radio" name="ftv" value="1">Dexter<br>
+<input type="radio" name="ftv" value="0">Breaking Bad<br>
+
+Favorite Hero:<br><input type="radio" name="fh" value="1">Arjun<br>
+<input type="radio" name="fh" value="0">Ranvir<br>
+
+Favorite Movie:<br><input type="radio" name="fm" value="0">Interstellar<br>
+<input type="radio" name="fm" value="1">50 shades of grey<br>
+
+Favourite singer:<br><input type="radio" name="fss" value="0">Sonu<br>
+<input type="radio" name="fss" value="1">Mohit<br>
+
+Favorite Animal:<br><input type="radio" name="fa" value="0">Elephant<br>
+<input type="radio" name="fa" value="1">Monkey<br>
+
+
+<input type="submit" onclick="score()">
+</form>
+</body>
+</html>

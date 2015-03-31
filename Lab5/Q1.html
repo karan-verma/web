@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>Q1</title>
+<script language="javascript">
+total=100,mrp=10000;
+function fn(adults,children){
+seats=adults+children;
+
+total=total-seats;
+if(total>=80){
+mrp_adults=0.6*mrp*adults;
+mrp_children=0.5*mrp*children;
+alert("Adult Cost= "+mrp_adults +"\nChidren Cost= "+mrp_children);
+}
+if(total>=60 && total<80){
+mrp_adults=0.7*mrp*adults;
+mrp_children=0.7*mrp*children;
+alert("Adult Cost= "+mrp_adults +"\nChidren Cost= "+mrp_children);
+}
+if(total>=50 && total<60){
+mrp_adults=0.75*mrp*adults;
+mrp_children=0.75*mrp*children;
+alert("Adult Cost= "+mrp_adults +"\nChidren Cost= "+mrp_children);
+}
+else if(total<50){
+mrp_adults=0.9*mrp*adults;
+mrp_children=0.9*mrp*children;
+alert("Adult Cost= "+mrp_adults +"\nChidren Cost= "+mrp_children);
+}
+}
+</script>
+</head>
+<body>
+
+<form name="f1">
+Adults=<input type="text" name="adults" ><br>
+Children=<input type="text" name="children" ><br>
+<button onclick="fn(parseInt(f1.adults.value),parseInt(f1.children.value))">Submit</button>
+</form>
+</body>
+</html>
